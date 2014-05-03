@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>File search</title>
+        <style>
+            input{
+                width: 600px;
+            }
+
+            .file-name{
+                color: green;
+            }
+            .fragment{
+                color: red;
+                margin-bottom: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form name="search-form">
+            <table>
+                <tr>
+                    <th>Search directory</th>
+                    <th>
+                        <input id="path-to-search" name="path-to-search" type="text" placeholder="Path to search"/>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Text</th>
+                    <th>
+                        <input id="text-to-search" type="text" placeholder="Text to search"/>
+                    </th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="start-search-btn" type="button">Search</button>
+                        <button id="stop-search-btn" type="button">Stop</button>
+                    </td>
+                </tr>
+            </table>
+            <div id="found-files"></div>
+        </form>
+        <script type="text/javascript" src="/asset/util.js"></script>
+        <script type="text/javascript" src="/asset/main.js"></script>
+    </body>
+</html>
